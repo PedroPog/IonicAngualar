@@ -1,0 +1,7 @@
+{
+  "name": "modern-apps",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
