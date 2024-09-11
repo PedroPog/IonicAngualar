@@ -2,7 +2,7 @@ import { Component, Input, OnInit, WritableSignal, inject, signal } from '@angul
 import { CommonModule, CurrencyPipe, DatePipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import {
-  IonContent, IonHeader, IonTitle, IonToolbar, IonButtons, IonBackButton, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonText, IonCardContent, IonLabel } from '@ionic/angular/standalone';
+  IonContent, IonHeader, IonTitle, IonToolbar, IonButtons, IonBackButton, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonText, IonCardContent, IonLabel, IonItem, IonIcon } from '@ionic/angular/standalone';
 import { MovieResult } from '../services/interfaces';
 import { MovieService } from '../services/movie.service';
 import { cashOutline,calendarOutline } from 'ionicons/icons';
@@ -13,8 +13,8 @@ import { addIcons } from 'ionicons';
   templateUrl: './details.page.html',
   styleUrls: ['./details.page.scss'],
   standalone: true,
-  imports: [IonLabel, IonCardContent, IonText, IonCardSubtitle, IonCardTitle, IonCardHeader, IonCard, IonBackButton, IonButtons,
-    IonContent, IonHeader, IonTitle, IonToolbar,
+  imports: [IonIcon, IonLabel, IonCardContent, IonText, IonCardSubtitle, IonCardTitle, IonCardHeader, IonCard, IonBackButton, IonButtons,
+    IonContent, IonHeader, IonTitle, IonToolbar,IonItem,
     CommonModule, FormsModule,CurrencyPipe,DatePipe,
   ]
 })
